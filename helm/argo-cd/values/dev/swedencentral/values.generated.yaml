@@ -1,0 +1,5 @@
+server:
+  ingress:
+    annotations:
+      external-dns.alpha.kubernetes.io/hostname: contosoadp-swedencentral-argocd-dev.contoso.internal
+    hostname: contosoadp-swedencentral-argocd-dev.contoso.internal
