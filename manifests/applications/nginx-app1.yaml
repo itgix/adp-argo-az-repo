@@ -12,11 +12,11 @@ spec:
   project: default
   source:
     path: manifests/deployments
-    repoURL: https://dev.azure.com/ITGix/Azure%20Landing%20Zones/_git/adp-argocd-client
+    repoURL: "{{ gitops_destination_repo }}"
     targetRevision: HEAD
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
     syncOptions:
-      - CreateNamespace=true
+    - CreateNamespace=true
