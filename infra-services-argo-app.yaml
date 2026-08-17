@@ -14,8 +14,8 @@ spec:
     path: helm/infra-services
     helm:
       valueFiles:
-      - values/{{ environment }}/{{ region }}/infra-facts.yaml
       - values/{{ environment }}/{{ region }}/values.yaml
+      - values/{{ environment }}/{{ region }}/infra-facts.yaml
       ignoreMissingValueFiles: true
   destination:
     namespace: argocd
